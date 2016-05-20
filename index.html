@@ -1,0 +1,615 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>移动导航实例</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="yidong.css">
+  <script type="text/javascript" src="index.js"></script>
+ </head>
+ <body>
+  
+  <div id="body_box">
+	<div id="header">
+		<div id="logo"></div>
+		<div id="search_group">
+			<div id="search_tab">
+				<a href="#" class="current">百度</a>
+				<a href="#">有道</a>
+				<a href="#">搜狗</a>
+				<a href="#">雅虎</a>
+			</div>
+			<div id="search_box">
+				<form>
+					<input id="search-input" type="text" value="请输入关键字">
+					<input id="search-button" type="submit" value="搜索">
+				</form>
+			</div>
+		</div>
+		<div id="speed_group">
+			<div id="speed_watch">网络质量测试</div>
+			<div id="speed_result">
+				<div id="result_top">
+					<p>你现在的网络速度</p>
+					<b>优</b>
+				</div>
+				<div id="result_bottom">
+					<a href="#" id="speed_test">网络测速</a>
+					<a href="#" id="feedback">上网慢反馈</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="main">
+		<div id="part1">
+			<div id="hot_pic">
+				<ul id="big_pic">
+					<li><a href="#"><img src="images/b1.jpg" /></a></li>
+					<li><a href="#"><img src="images/b2.jpg" /></a></li>
+					<li><a href="#"><img src="images/b3.jpg" /></a></li>
+					<li><a href="#"><img src="images/b4.jpg" /></a></li>
+					<li><a href="#"><img src="images/b5.jpg" /></a></li>
+				</ul>
+				<div id="small_pic_group">
+					<a id="sPic_left" class="sPic_btn" href="#"> </a>
+					<a id="sPic_right" class="sPic_btn" href="#"> </a>
+					<div id="sPic_bar">
+						<ul>
+							<li class="active"><img src="images/s1.jpg" /></li>
+							<li><img src="images/s2.jpg" /></li>
+							<li><img src="images/s3.jpg" /></li>
+							<li><img src="images/s4.jpg" /></li>
+							<li><img src="images/s5.jpg" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<h3 id="h">极速视频热点区（移动网内资源）</h3>
+			<div id="hotslist">
+				<ul id="hot_title">
+					<li class="first current1">热点</li>
+					<li>电影</li>
+					<li>电视剧</li>
+					<li>综艺</li>
+					<li>软件</li>
+				</ul>
+				<div id="hot_contents">
+					<ul class="hot_content" style="display:block;">
+						<li>
+							<span class="num top3">1</span>
+							<a href="#">
+								习近平主持召开网络安全和信息化工作座谈会
+								<span>20638</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">2</span>
+							<a href="#">
+								国家防汛抗旱总指挥部专题会议
+								<span>19531</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">3</span>
+							<a href="#">
+								时政要闻
+								<span>18318</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">4</span>
+							<a href="#">
+								今日“谷雨” 南方再迎强降雨
+								<span>17936</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">5</span>
+							<a href="#">
+								行车无小事 多地严打交通违法
+								<span>16638</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">6</span>
+							<a href="#">
+								多地遭遇强降雨天气
+								<span>15531</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">7</span>
+							<a href="#">
+								关注儿童安全：小疏忽酿大危险
+								<span>14318</span>
+							</a>
+						</li>
+						<li class="last_li">
+							<span class="num">8</span>
+							<a href="#">
+								社会主义核心价值观主题微电影
+								<span>12936</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="hot_content">
+						<li>
+							<span class="num top3">1</span>
+							<a href="#">
+								《烈日灼心》
+								<span>62368</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">2</span>
+							<a href="#">
+								《夏洛特烦恼》
+								<span>61864</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">3</span>
+							<a href="#">
+								《命中注定》
+								<span>56688</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">4</span>
+							<a href="#">
+								《我是证人》
+								<span>52841</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">5</span>
+							<a href="#">
+								《老炮儿》
+								<span>50914</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">6</span>
+							<a href="#">
+								《剩者为王》
+								<span>47658</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">7</span>
+							<a href="#">
+								《唐人街探案》
+								<span>43951</span>
+							</a>
+						</li>
+						<li class="last_li">
+							<span class="num">8</span>
+							<a href="#">
+								《寻龙诀》
+								<span>41574</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="hot_content">
+						<li>
+							<span class="num top3">1</span>
+							<a href="#">
+								《寂寞空庭春欲晚》
+								<span>26841</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">2</span>
+							<a href="#">
+								《青丘狐传说》
+								<span>25346</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">3</span>
+							<a href="#">
+								《女医明妃传》
+								<span>23849</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">4</span>
+							<a href="#">
+								《特种兵之霹雳火》
+								<span>22801</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">5</span>
+							<a href="#">
+								《太阳的后裔》
+								<span>22019</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">6</span>
+							<a href="#">
+								《武神赵子龙》
+								<span>21824</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">7</span>
+							<a href="#">
+								《旋风十一人》
+								<span>20157</span>
+							</a>
+						</li>
+						<li class="last_li">
+							<span class="num">8</span>
+							<a href="#">
+								《两个女人的战争》
+								<span>19471</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="hot_content">
+						<li>
+							<span class="num top3">1</span>
+							<a href="#">
+								《二胎时代》
+								<span>40471</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">2</span>
+							<a href="#">
+								《女婿上门》
+								<span>37746</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">3</span>
+							<a href="#">
+								《非诚勿扰2016》
+								<span>36849</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">4</span>
+							<a href="#">
+								《最强大脑》
+								<span>33801</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">5</span>
+							<a href="#">
+								《我是歌手第四季》
+								<span>30019</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">6</span>
+							<a href="#">
+								《王牌对王牌》
+								<span>28824</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">7</span>
+							<a href="#">
+								《快乐大本营》
+								<span>27157</span>
+							</a>
+						</li>
+						<li class="last_li">
+							<span class="num">8</span>
+							<a href="#">
+								《来吧冠军》
+								<span>25471</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="hot_content">
+						<li>
+							<span class="num top3">1</span>
+							<a href="#">
+								QQ客户端官方下载
+								<span>42841</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">2</span>
+							<a href="#">
+								飞信客户端官方下载
+								<span>40746</span>
+							</a>
+						</li>
+						<li>
+							<span class="num top3">3</span>
+							<a href="#">
+								随E行WLAN客户端下载
+								<span>38849</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">4</span>
+							<a href="#">
+								互联网测试客户端下载
+								<span>36801</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">5</span>
+							<a href="#">
+								酷狗客户端官方下载
+								<span>35019</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">6</span>
+							<a href="#">
+								迅雷7客户端官方下载
+								<span>34824</span>
+							</a>
+						</li>
+						<li>
+							<span class="num">7</span>
+							<a href="#">
+								PPS影音客户端下载
+								<span>33157</span>
+							</a>
+						</li>
+						<li class="last_li">
+							<span class="num">8</span>
+							<a href="#">
+								FOXmail客户端官方下载
+								<span>30471</span>
+							</a>
+						</li>
+					</ul>
+				
+				</div>
+			</div>
+				
+		</div>
+	
+		<div id="part2">
+			<h2 id="res_head">极速网站导航区（移动网内资源）</h2>
+			<div class="res_box" id="box1">
+				<div class="res_left">
+					<div class="res_group" onclick="return false;">
+						<img class="res_group_img" src="images/category/fav.png" />
+						<span class="res_group_text">常用推荐</span>
+					</div>
+					<div class="res_group current2_left" onclick="return false;">
+						<img class="res_group_img" src="images/category/news.png" />
+						<span class="res_group_text">优惠资讯</span>
+					</div>
+					<div class="res_group" onclick="return false;">
+						<img class="res_group_img" src="images/category/portal.png" />
+						<span class="res_group_text">门户</span>
+					</div>
+					<div class="res_group" onclick="return false;">
+						<img class="res_group_img" src="images/category/shop.png" />
+						<span class="res_group_text">商城</span>
+					</div>
+					<div class="res_group" onclick="return false;">
+						<img class="res_group_img" src="images/category/music.png" />
+						<span class="res_group_text">音乐</span>
+					</div>
+					<div class="res_group" onclick="return false;">
+						<img class="res_group_img" src="images/category/life.png" />
+						<span class="res_group_text">生活</span>
+					</div>
+				</div>
+				
+				<div class="res_right">
+					<div class="res_bd">
+						<h3>常用推荐</h3>
+					</div>
+					<ul class="logo_group">
+						<li><a href="#">
+							<img src="images/logo/pa1.gif" /><span>新浪</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pa2.jpg" /><span>搜狐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pa3.gif" /><span>淘宝网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pa4.gif" /><span>拍拍网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pa5.gif" /><span>QQ音乐</span>
+						</a></li>
+					</ul>
+					<div class="res_list">
+					</div>
+				</div>
+				
+				<div class="res_right" style="display:block;">
+					<div class="res_bd">
+						<h3>优惠资讯</h3>
+					</div>
+					<a href="#"><img id="pb1" src="images/logo/pb.jpg" /></a>			
+				</div>
+				
+				<div class="res_right">
+					<div class="res_bd">
+						<h3>门户</h3>
+					</div>
+					<ul class="logo_group">
+						<li><a href="#">
+							<img src="images/logo/pa1.gif" /><span>新浪</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pa2.jpg" /><span>搜狐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc3.jpg" /><span>腾讯</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc4.jpg" /><span>网易</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc5.gif" /><span>百度</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc6.gif" /><span>凤凰网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc7.jpg" /><span>搜狗</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc8.jpg" /><span>中华网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc9.jpg" /><span>21CN</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pc10.jpg" /><span>TOM</span>
+						</a></li>
+					</ul>
+					<div class="res_list">
+						<a href="#">大洋网</a>|<a href="#">中国新闻网</a>|<a href="#">央视网</a>|<a href="#">环球网</a>|<a href="#">和讯网</a>|<a href="#">站长之家</a>|<a href="#">东方网</a>|<a href="#">国际在线</a>|<a href="#">新华社</a>|<a href="#">人民网</a>
+					</div>
+				</div>
+				
+				<div class="res_right">
+					<div class="res_bd">
+						<h3>商城</h3>
+					</div>
+					<ul class="logo_group">
+						<li><a href="#">
+							<img src="images/logo/pa3.gif" /><span>淘宝网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pa4.gif" /><span>拍拍网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd3.gif" /><span>蘑菇街</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd4.gif" /><span>苏宁易购</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd5.gif" /><span>1号店</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd6.gif" /><span>当当网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd7.jpg" /><span>亚马逊</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd8.jpg" /><span>国美电器</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd9.gif" /><span>凡客诚品</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd10.gif" /><span>欢购网</span>
+						</a></li>
+					</ul>
+					<div class="res_list">
+						<a href="#">大洋网</a>|<a href="#">中国新闻网</a>|<a href="#">央视网</a>|<a href="#">环球网</a>|<a href="#">和讯网</a>|<a href="#">站长之家</a>|<a href="#">东方网</a>|<a href="#">国际在线</a>|<a href="#">新华社</a>|<a href="#">人民网</a>
+					</div>
+				</div>
+				
+				<div class="res_right">
+					<div class="res_bd">
+						<h3>音乐</h3>
+					</div>
+					<ul class="logo_group">
+						<li><a href="#">
+							<img src="images/logo/pe1.gif" /><span>QQ音乐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pe2.gif" /><span>酷狗音乐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pe3.gif" /><span>搜狗音乐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pe4.gif" /><span>A8</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pe5.gif" /><span>九天音乐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pe6.gif" /><span>巨鲸音乐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pe7.gif" /><span>音悦台</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pe8.gif" /><span>酷我音乐</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd9.gif" /><span>一听音乐网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pd10.gif" /><span>九酷音乐</span>
+						</a></li>
+					</ul>
+					<div class="res_list">
+						<a href="#">千千静听</a>|<a href="#">多米音乐</a>|<a href="#">虾米音乐</a>|<a href="#">新浪音乐</a>|<a href="#">百度MP3</a>|<a href="#">3G音乐</a>
+					</div>
+				</div>
+				
+				<div class="res_right">
+					<div class="res_bd">
+						<h3>生活</h3>
+					</div>
+					<ul class="logo_group">
+						<li><a href="#">
+							<img src="images/logo/pf1.gif" /><span>坐车网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf2.gif" /><span>赶紧网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf3.gif" /><span>搜房网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf4.gif" /><span>58同城</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf5.gif" /><span>安居客</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf6.gif" /><span>大众点评网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf7.gif" /><span>百合网</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf8.gif" /><span>手机中国</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf9.gif" /><span>美食天下</span>
+						</a></li>
+						<li><a href="#">
+							<img src="images/logo/pf10.gif" /><span>蜂鸟网</span>
+						</a></li>
+					</ul>
+					<div class="res_list">
+						<a href="#">铁路订票网</a>|<a href="#">百姓网</a>|<a href="#">安居客二手房</a>|<a href="#">易登网</a>|<a href="#">百业网</a>|<a href="#">手递手</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="footer">
+			<p>
+				<a href="#">设置主页</a>　|　<a href="">收藏本站</a>
+			</p>
+			<p>京ICP备05002571号 | ©2012-2013 中国移动通信版权所有</p>
+		</div>
+		
+	</div>
+	
+  </div>
+  
+ </body>
+</html>
