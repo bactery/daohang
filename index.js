@@ -1,5 +1,6 @@
 window.onload=function(){
 	//左边tab
+	var k=0;
 	var hotTitle=document.getElementById('hot_title');
 	var hTitle=hotTitle.getElementsByTagName('li');
 	var hotContent=document.getElementById('hot_contents');
@@ -28,7 +29,6 @@ window.onload=function(){
 	var btn2=document.getElementById('sPic_right');
 	var bigPicImg=bigPic.getElementsByTagName('li');
 	
-	var k=0;
 	var picBar=document.getElementById('sPic_bar');
 	var sPic=picBar.getElementsByTagName('li');
 	
@@ -96,29 +96,67 @@ window.onload=function(){
 				next(bigPic);
 				sPicGo(1);
 			},3000);
+			k=this.index;
 		}
 	}
 	
 	//资源区
 	resTab('box1');
-	
+
 }
+
+function myBrowser(){
+    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+    var isOpera = userAgent.indexOf("Opera") > -1;
+    if (isOpera) {
+        return "Opera"
+    }; //判断是否Opera浏览器
+    if (userAgent.indexOf("Firefox") > -1) {
+        return "FF";
+    } //判断是否Firefox浏览器
+    if (userAgent.indexOf("Chrome") > -1){
+  return "Chrome";
+ }
+    if (userAgent.indexOf("Safari") > -1) {
+        return "Safari";
+    } //判断是否Safari浏览器
+    if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
+        return "IE";
+    }; //判断是否IE浏览器
+}
+var mb = myBrowser();
 
 function pre(obj){
 	var l=obj.offsetLeft;
-	if(l>=-1){
-		l=-(obj.offsetWidth-632);
+	if(mb=='FF'){
+		if(l>=-1){
+			l=-(obj.offsetWidth-632);
+		}else{
+			l+=633;
+		}
 	}else{
-		l+=633;
-	}
+		if(l>=-1){
+			l=-(obj.offsetWidth-632);
+		}else{
+			l+=632;
+		}
+	};
 	obj.style.left=l+'px';
 }
 function next(obj){
 	var l=obj.offsetLeft;
-	if(l<=-(obj.offsetWidth-633)){
-		l=0;
+	if(mb=='FF'){
+		if(l<=-(obj.offsetWidth-633)){
+			l=0;
+		}else{
+			l-=631;
+		}
 	}else{
-		l-=631;
+		if(l<=-(obj.offsetWidth-632)){
+			l=0;
+		}else{
+			l-=632;
+		}
 	}
 	obj.style.left=l+'px';
 }
