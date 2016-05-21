@@ -1,4 +1,25 @@
 window.onload=function(){
+	//搜索栏
+	var searchGroup=document.getElementById('search_tab');
+	var searchList=searchGroup.getElementsByTagName('a');
+	var searchBar=document.getElementById('search-input');
+	
+	for(var i=0;i<searchList.length;i++){
+		searchList[i].onclick=function(){
+			for(var j=0;j<searchList.length;j++){
+				searchList[j].className="";
+			}
+			this.className="current";
+			return false;
+		}
+	}
+	searchBar.onfocus=function(){
+		this.value="";
+	}
+	searchBar.onblur=function(){
+		this.value="请输入关键字";
+	}
+	
 	//左边tab
 	var k=0;
 	var hotTitle=document.getElementById('hot_title');
